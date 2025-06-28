@@ -1,0 +1,24 @@
+C:\Users\Starbruder\source\repos\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\bin\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.exe.config
+C:\Users\Starbruder\source\repos\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\bin\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.exe
+C:\Users\Starbruder\source\repos\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\bin\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.pdb
+C:\Users\Starbruder\source\repos\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\obj\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.csproj.AssemblyReference.cache
+C:\Users\Starbruder\source\repos\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\obj\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.csproj.SuggestedBindingRedirects.cache
+C:\Users\Starbruder\source\repos\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\obj\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.csproj.CoreCompileInputs.cache
+C:\Users\Starbruder\source\repos\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\obj\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.exe
+C:\Users\Starbruder\source\repos\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\obj\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.pdb
+S:\FAST AS FUCK BOIII -Schule\Ich Projekte\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\bin\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.exe.config
+S:\FAST AS FUCK BOIII -Schule\Ich Projekte\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\bin\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.exe
+S:\FAST AS FUCK BOIII -Schule\Ich Projekte\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\bin\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.pdb
+S:\FAST AS FUCK BOIII -Schule\Ich Projekte\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\obj\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.csprojAssemblyReference.cache
+S:\FAST AS FUCK BOIII -Schule\Ich Projekte\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\obj\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.exe
+S:\FAST AS FUCK BOIII -Schule\Ich Projekte\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\obj\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.pdb
+D:\Programmieren\C#\Ich selbst programmieren\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\bin\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.exe.config
+D:\Programmieren\C#\Ich selbst programmieren\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\bin\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.exe
+D:\Programmieren\C#\Ich selbst programmieren\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\bin\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.pdb
+D:\Programmieren\C#\Ich selbst programmieren\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\obj\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.csproj.AssemblyReference.cache
+D:\Programmieren\C#\Ich selbst programmieren\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\obj\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.csproj.CoreCompileInputs.cache
+D:\Programmieren\C#\Ich selbst programmieren\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\obj\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.exe
+D:\Programmieren\C#\Ich selbst programmieren\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\obj\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.pdb
+D:\Programmieren\C#\Ich selbst programmieren\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\bin\Debug\NetEscapades.EnumGenerators.Attributes.dll
+D:\Programmieren\C#\Ich selbst programmieren\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\obj\Debug\Cs_TikTikToe_Challenge_11.2.22_D.H.exe.config
+D:\Programmieren\C#\Ich selbst programmieren\Cs_TikTikToe_Challenge_11.2.22_D.H\Cs_TikTikToe_Challenge_11.2.22_D.H\obj\Debug\Cs_TikTi.1F1538C5.Up2Date
