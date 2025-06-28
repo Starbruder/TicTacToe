@@ -1,6 +1,8 @@
-﻿namespace TicTacToe;
+﻿using static System.Console;
 
-public class TicTacToe
+namespace TicTacToe;
+
+public sealed class TicTacToe
 {
     public enum SpielFelder
     {
@@ -9,7 +11,6 @@ public class TicTacToe
         UntenLinks = 6, UntenMitte = 7, UntenRechts = 8
     }
 
-    // Konstruktoren
     public TicTacToe() { }
     public TicTacToe(bool spielerXBeginnt) => this.SpielerXBeginnt = spielerXBeginnt;
     public TicTacToe(bool spielerXBeginnt, bool welcomeScreen)
@@ -37,7 +38,6 @@ public class TicTacToe
     }
 
 
-    // Public Eigenschaften/Konstanten
     public bool GameStop { get; private set; } = false;
     public bool SpielerXBeginnt { get; private set; } = true;
     public byte SpielZügeAnzahl { get; private set; } = 0;
@@ -61,35 +61,34 @@ public class TicTacToe
     public const byte MaxSpielZügeAnzahl = 9;
 
 
-    // Public Methods
     public void ShowZugAnzahl()
-        => Console.Write("SpielZügeAnzahl: \t" + SpielZügeAnzahl);
+        => Write("SpielZügeAnzahl: \t" + SpielZügeAnzahl);
 
     public void ShowAllEigenschaften()
     {
-        Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine();
+        ForegroundColor = ConsoleColor.Cyan;
+        WriteLine();
 
-        Console.WriteLine("GameStop: \t\t" + GameStop);
-        Console.WriteLine("MaxSpielZügeAnzahl: \t" + MaxSpielZügeAnzahl);
-        Console.WriteLine("SpielerXBeginnt: \t" + SpielerXBeginnt);
+        WriteLine("GameStop: \t\t" + GameStop);
+        WriteLine("MaxSpielZügeAnzahl: \t" + MaxSpielZügeAnzahl);
+        WriteLine("SpielerXBeginnt: \t" + SpielerXBeginnt);
         ShowZugAnzahl();
 
-        Console.Write("\nSpielZügeVerlauf: \t");
+        Write("\nSpielZügeVerlauf: \t");
         foreach (var item in SpielZügeVerlauf)
         {
-            Console.Write(item);
+            Write(item);
         }
-        Console.WriteLine();
+        WriteLine();
 
-        Console.Write("SpielFelderVerlauf: \t");
+        Write("SpielFelderVerlauf: \t");
         foreach (var item in SpielFelderVerlauf)
         {
-            Console.Write(item);
+            Write(item);
         }
 
-        Console.WriteLine("\n");
-        Console.ResetColor();
+        WriteLine("\n");
+        ResetColor();
     }
 
     public void StartGame() => StartGameInternal(this.SpielerXBeginnt);
@@ -107,8 +106,8 @@ public class TicTacToe
     {
         while (true)
         {
-            Console.Write($"\nPlayer: {playerLetter}, Input Position: ");
-            var inputPos = Console.ReadLine();
+            Write($"\nPlayer: {playerLetter}, Input Position: ");
+            var inputPos = ReadLine();
             if (int.TryParse(inputPos, out var tryParseNumber))
             {
                 var outputNbr = NumberSchutzSpielFeldSet(tryParseNumber);
@@ -118,23 +117,23 @@ public class TicTacToe
                     return outputNbr;
                 }
 
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\nFEHLER!");
-                Console.WriteLine("Spielzug wurde bereits von einem anderen Spieler gemacht!\n");
-                Console.ResetColor();
+                ForegroundColor = ConsoleColor.Red;
+                WriteLine("\nFEHLER!");
+                WriteLine("Spielzug wurde bereits von einem anderen Spieler gemacht!\n");
+                ResetColor();
                 continue;
             }
 
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("\nFEHLER!");
-            Console.WriteLine("Spielzug konnte nicht entgegengenommen werden!\n");
-            Console.ResetColor();
+            ForegroundColor = ConsoleColor.Red;
+            WriteLine("\nFEHLER!");
+            WriteLine("Spielzug konnte nicht entgegengenommen werden!\n");
+            ResetColor();
         }
     }
 
     public void ShowGame()
     {
-        Console.WriteLine();
+        WriteLine();
 
         var spielFeldNummer = 0;
         for (var i = 0; i < 3; i++)
@@ -145,16 +144,16 @@ public class TicTacToe
                 var spielFeldOutput = SpielFeldOutput(spielFeldNummer);
                 if (!char.IsDigit(Convert.ToChar(spielFeldOutput)))
                 {
-                    Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.Write("\t" + spielFeldOutput);
-                    Console.ResetColor();
+                    ForegroundColor = ConsoleColor.Yellow;
+                    Write("\t" + spielFeldOutput);
+                    ResetColor();
                     spielFeldNummer++;
                     continue;
                 }
-                Console.Write("\t" + spielFeldOutput);
+                Write("\t" + spielFeldOutput);
                 spielFeldNummer++;
             }
-            Console.WriteLine("\n");
+            WriteLine("\n");
         }
     }
 
@@ -172,26 +171,25 @@ public class TicTacToe
     }
 
 
-    // Private Methods
     private void ShowTutorial()
     {
-        Console.WriteLine("\n\tTutorial:\n");
-        Console.WriteLine("Sie sind gleich einer von 2 Spieler. X oder 0.");
-        Console.WriteLine("Geben Sie eine Zahl gleich ein,");
-        Console.WriteLine("wo sie ihren Zug platzieren möchten.");
-        Console.WriteLine("Wenn 3 Kreutze oder Kreise in der Reihe,");
-        Console.WriteLine("oder diagonal platziert wurden, hat der jenige gewonnen.");
-        Console.WriteLine("\tViel Erfolg!\n");
-        Console.WriteLine("Drücken Sie eine Taste um fortzufahren...\n");
-        Console.ReadKey();
-        Console.Clear();
+        WriteLine("\n\tTutorial:\n");
+        WriteLine("Sie sind gleich einer von 2 Spieler. X oder 0.");
+        WriteLine("Geben Sie eine Zahl gleich ein,");
+        WriteLine("wo sie ihren Zug platzieren möchten.");
+        WriteLine("Wenn 3 Kreutze oder Kreise in der Reihe,");
+        WriteLine("oder diagonal platziert wurden, hat der jenige gewonnen.");
+        WriteLine("\tViel Erfolg!\n");
+        WriteLine("Drücken Sie eine Taste um fortzufahren...\n");
+        ReadKey();
+        Clear();
     }
 
     private void WelcomeScreen()
     {
-        Console.WriteLine("\n---------------------------------------");
-        Console.WriteLine("\tWillkommen zu TikTakToe!");
-        Console.WriteLine("---------------------------------------\n");
+        WriteLine("\n---------------------------------------");
+        WriteLine("\tWillkommen zu TikTakToe!");
+        WriteLine("---------------------------------------\n");
     }
 
     private byte NumberSchutzSpielFeldSet(int outputNumber)
@@ -275,22 +273,22 @@ public class TicTacToe
 
     private void EndGameUnentschieden()
     {
-        Console.Clear();
-        Console.WriteLine("\n-----------------------------");
-        Console.WriteLine("\tUnentschieden!");
-        Console.WriteLine("-----------------------------\n");
+        Clear();
+        WriteLine("\n-----------------------------");
+        WriteLine("\tUnentschieden!");
+        WriteLine("-----------------------------\n");
         ShowGame();
         GameStop = true;
     }
 
     private void SpielerWon(char spielerBuchstabe)
     {
-        Console.Clear();
-        Console.WriteLine("\n-----------------------------");
-        Console.WriteLine($"\tSpieler: {spielerBuchstabe} hat gewonnen!");
-        Console.WriteLine("-----------------------------\n");
+        Clear();
+        WriteLine("\n-----------------------------");
+        WriteLine($"\tSpieler: {spielerBuchstabe} hat gewonnen!");
+        WriteLine("-----------------------------\n");
         ShowGame();
-        Console.ReadKey();
+        ReadKey();
         GameStop = true;
     }
 }
