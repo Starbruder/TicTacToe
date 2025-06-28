@@ -69,7 +69,7 @@ namespace Cs_TikTikToe_Challenge_11._2._22_D.H
         // Public Methods
         public void ShowZugAnzahl()
             => Console.Write("SpielZügeAnzahl: \t" + SpielZügeAnzahl);
-        
+
         public void ShowAllEigenschaften()
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
@@ -122,14 +122,14 @@ namespace Cs_TikTikToe_Challenge_11._2._22_D.H
                     {
                         return outputNbr;
                     }
-                    
+
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("\nFEHLER!");
                     Console.WriteLine("Spielzug wurde bereits von einem anderen Spieler gemacht!\n");
                     Console.ResetColor();
                     continue;
                 }
-                
+
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("\nFEHLER!");
                 Console.WriteLine("Spielzug konnte nicht entgegengenommen werden!\n");
@@ -201,7 +201,7 @@ namespace Cs_TikTikToe_Challenge_11._2._22_D.H
 
         private byte NumberSchutzSpielFeldSet(int outputNumber)
             => outputNumber >= MaxSpielZügeAnzahl ? (byte)(MaxSpielZügeAnzahl - 1) : (byte)outputNumber;
-        
+
         private void SpielerZugInternal(char spielZugBuchstabe, SpielFelder zugPosition)
         {
             SpielZügeVerlauf.Add(spielZugBuchstabe);
@@ -209,7 +209,7 @@ namespace Cs_TikTikToe_Challenge_11._2._22_D.H
             SpielZügeAnzahl++;
             CheckGewinn(spielZugBuchstabe);
         }
-        
+
         private void StartGameInternal(bool spielerXBeginnt)
         {
             ResetGameInternal(spielerXBeginnt);
