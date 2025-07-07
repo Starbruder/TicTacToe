@@ -1,4 +1,5 @@
-﻿using static System.Console;
+﻿using System.Numerics;
+using static System.Console;
 
 namespace TicTacToe;
 
@@ -19,7 +20,7 @@ public sealed class TicTacToe
 
         if (welcomeScreen)
         {
-            WelcomeScreen();
+            PrintWelcomeScreen();
         }
     }
     public TicTacToe(bool spielerXBeginnt, bool welcomeScreen, bool tutorial)
@@ -28,7 +29,7 @@ public sealed class TicTacToe
 
         if (welcomeScreen)
         {
-            WelcomeScreen();
+            PrintWelcomeScreen();
         }
 
         if (tutorial)
@@ -185,12 +186,16 @@ public sealed class TicTacToe
         Clear();
     }
 
-    private void WelcomeScreen()
+    private static void PrintHeader(string headerText)
     {
-        WriteLine("\n---------------------------------------");
-        WriteLine("\tWillkommen zu TikTakToe!");
-        WriteLine("---------------------------------------\n");
+        const string HeaderSeparator = "----------------------------------------";
+
+        WriteLine("\n" + HeaderSeparator);
+        WriteLine($"\t{headerText}");
+        WriteLine(HeaderSeparator + "\n");
     }
+
+    private static void PrintWelcomeScreen() => PrintHeader("Willkommen zu TicTacToe!");
 
     private byte NumberSchutzSpielFeldSet(int outputNumber)
         => outputNumber >= MaxSpielZügeAnzahl ? (byte)(MaxSpielZügeAnzahl - 1) : (byte)outputNumber;
@@ -274,9 +279,7 @@ public sealed class TicTacToe
     private void EndGameUnentschieden()
     {
         Clear();
-        WriteLine("\n-----------------------------");
-        WriteLine("\tUnentschieden!");
-        WriteLine("-----------------------------\n");
+        PrintHeader("Unentschieden!");
         ShowGame();
         GameStop = true;
     }
@@ -284,9 +287,7 @@ public sealed class TicTacToe
     private void SpielerWon(char spielerBuchstabe)
     {
         Clear();
-        WriteLine("\n-----------------------------");
-        WriteLine($"\tSpieler: {spielerBuchstabe} hat gewonnen!");
-        WriteLine("-----------------------------\n");
+        PrintHeader($"Spieler: {spielerBuchstabe} hat gewonnen!");
         ShowGame();
         ReadKey();
         GameStop = true;
