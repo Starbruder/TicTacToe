@@ -1,5 +1,4 @@
-﻿using System.Numerics;
-using static System.Console;
+﻿using static System.Console;
 
 namespace TicTacToe;
 
@@ -172,7 +171,7 @@ public sealed class TicTacToe
     }
 
 
-    private void ShowTutorial()
+    private static void ShowTutorial()
     {
         WriteLine("\n\tTutorial:\n");
         WriteLine("Sie sind gleich einer von 2 Spieler. X oder 0.");
@@ -197,7 +196,7 @@ public sealed class TicTacToe
 
     private static void PrintWelcomeScreen() => PrintHeader("Willkommen zu TicTacToe!");
 
-    private byte NumberSchutzSpielFeldSet(int outputNumber)
+    private static byte NumberSchutzSpielFeldSet(int outputNumber)
         => outputNumber >= MaxSpielZügeAnzahl ? (byte)(MaxSpielZügeAnzahl - 1) : (byte)outputNumber;
 
     private void SpielerZugInternal(char spielZugBuchstabe, SpielFelder zugPosition)
