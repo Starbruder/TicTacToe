@@ -178,8 +178,8 @@ public sealed class TicTacToe
         WriteLine("Sie sind gleich einer von 2 Spieler. X oder 0.");
         WriteLine("Geben Sie eine Zahl gleich ein,");
         WriteLine("wo sie ihren Zug platzieren möchten.");
-        WriteLine("Wenn 3 Kreutze oder Kreise in der Reihe,");
-        WriteLine("oder diagonal platziert wurden, hat der jenige gewonnen.");
+        WriteLine("Wenn 3 Kreuze oder Kreise in der Reihe,");
+        WriteLine("oder diagonal platziert wurden, hat derjenige gewonnen.");
         WriteLine("\tViel Erfolg!\n");
         WriteLine("Drücken Sie eine Taste um fortzufahren...\n");
         ReadKey();
